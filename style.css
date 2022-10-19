@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+.nav{
+  position:relative;
+  top:0px;
+}
+.del{
+  margin-left:100vw;
+}
+.card-todo{
+  min-width:92vw;
+  max-width:95vw;
+}
+.rounded-circle{
+height:30px;
+  width:30px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+@keyframes slide{
+  from{
+    margin-left:100vw;
+  }to{
+    margin-left:0;
+  }
+}
+
+@keyframes delSlide{
+  0%{
+    margin-left:0;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+  }80%{
+    
+    margin-left:-120vw;
+    height: 0px;
+  }100%{
+    display: none;
+    margin-left:-120vw;
+  }
+}
